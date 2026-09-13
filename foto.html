@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>foto saya</title>
+    <style>
+            :root {
+                --bg-c: #151416;
+                --card-bg: #ffffff;
+                --pc: #F5CBCB;
+                --sc: #c14040;
+                --tc: #ce1d1d;
+                --b: gray;
+                --f: #d2c5ff;
+            }
+
+            body {
+                background-color: var(--bg-c);
+                padding: 15px;
+            }
+            .f {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                color: var(--f);
+                font-size: 50px;
+            }
+            .ctn {
+                background-color: var(--card-bg);
+                max-width: 8500px;
+                border-radius: 20px;
+                padding: 10px;
+                box-shadow: 0 4px 6px -1px black;
+            }
+            .foto {
+                padding: 0 7px 120px;
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                grid-auto-rows: 245px;
+                gap: 5px;
+            }
+            .foto img {
+                height: 100%;
+                width: 100%;
+                display: block;
+            }
+            .foto img:nth-child(5) {
+                grid-column: span 2;
+            }
+            .foto img:nth-child(6) {
+                grid-column: span 2;
+            }
+            .foto img:nth-child(7) {
+                grid-column: span 1;
+            }
+            .foto img:nth-child(8) {
+                grid-column: span 2;
+            }
+            
+        </style>
+</head>
+<body>
+    <h1 class="f">foto yang saya foto</h1>
+    <main class="foto">
+
+        <img src="foto1.jpeg" alt="Foto 1">
+        <img src="foto2.jpeg" alt="Foto 2">
+        <img src="foto3.jpeg" alt="Foto 3">
+        <img src="foto4.jpeg" alt="Foto 4">
+        <img src="foto5.jpeg" alt="Foto 5">
+        <img src="foto6.jpeg" alt="Foto 6">
+        <img src="foto7.jpeg" alt="Foto 7" style="object-fit: cover;">
+        <img src="foto8.jpeg" alt="Foto 8">
+
+
+    </main>
+    <a href="index.html" class="f">Kembali ke Halaman Utama</a>
+</body>
+</html>
